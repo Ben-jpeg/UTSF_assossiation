@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<!-- ce que comporte le HEAD ci-dessous ne s'affiche pas sur la page internet, 
+    on y place des réglages, des scripts, polices d'écritures,
+    le titre que l'on veux voir sur l'onglet (dans la balise 'title')
+    *la page css et la page javascript que l'on veux lier à cette page html,-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/utsf.css">
+
+
+
+    <title>UTSF - Accueil</title>
+</head>
+
+
+
+
+<!-- Tout ce que comporte le BODY ci-dessous est ce que l'on veux voir affiché sur la page web,
+    on organise le body en plusieurs partie , de haut en bas:
+
+    -HEADER : C'est l'en-tête de la page, tout ce qui est en haut de la page
+              On y retrouve le logo du site ou de la société si elle en a, 
+              une barre de navigation si besoin avec différentes rubriques
+              une barre de recherche éventuellement
+
+    -MAIN : C'est le contenu principal de la page, ce qu'il y a entre le header et footer.
+            On y met les articles que l'on veux mettre en avant,
+             les choses que les clients du site viennent consulter
+             les produits à vendre etc par exemple pour un site commercial
+
+    -FOOTER : C'est le bas de page, il contient généralement des mentions légales, des moyens 
+              de contact, des informations sur le site & la société/organisme
+    '-->
+
+<body>
+
+
+    <header id="header">
+
+        <!-- le titre 'UTSF' et son sous''titre-->
+        <article class="utsfGrand flex jcsb">
+            <div>
+                <h1> <span class="lettre_u">U</span><span class="lettre_ts">TS</span><span class="lettre_f">F</span> </h1>
+                <h2 class="sousTitre">Union Tremplin Socio-Culturelle de France</h2>
+            </div>
+
+            <div>
+                <img class="logoVille" src="./img/logoVille.png" alt="Logo ville de Champigny Sur Marne">
+            </div>
+        </article>
+
+
+
+        <!-- Sous-menu  -->
+        <ul class="sousMenu flex jcsa">
+            <li class="presentation_menu">PRESENTATION</li>
+            <li class="activites_menu">ACTIVITES</li>
+            <li class="programmes_menu">PROGRAMMES</li>
+            <li class="contact_menu">CONTACT</li>
+        </ul>
+
+        <div class="flex jcc">
+            <img class="imgAccueil " src="./img/background.jpg" alt="Image de présenttion - Accueil">
+        </div>
+
+    </header>
+
+
+    <main>
+        <!-- phrase d'accroche de l'assossiation'-->
+        <h2 class="punchline taCenter">Ce qui est fait pour nous, sans nous,<br/>est contre nous</h2>
+
+
+        <!-- SECTION PRESENTATION-->
+        <section class="presentation">
+
+            <hr class="taCenter"></hr>
+
+            <h2 class="titrePresentation taCenter">PRESENTATION</h2>
+
+            <!-- descrition de l'assossiation'-->
+            <p class="textPres taCenter">Union Tremplin Socio-culturelle France est une association crée en 1988 à Champigny sur Marne(94). Association ouverte à tous proposant des activités culturelles, sociales et infomatique telles que des évènements sportifs, solidaire, ludiques
+                et humanitaires.</p>
+
+            <div class="flex jcc">
+                <img class="logoMain" src="./img/logonew.png">
+            </div>
+
+            <p class="textPres taCenter">Ces actions ont pour but de favoriser les liens entre habitants, lutter contre l’exclusion, lutter contre la fracture numérique et apporter un soutien aux jeunes en difficultés scolaire. Les populations bénéficiant de ces actions sont âgées
+                de 6 à 75 ans.</p>
+            <!-- fin description-->
+
+
+            <!-- logos des actions de l'assossiation-->
+            <article class="flex jcsa">
+                <img class="logonoirs" alt="Approche numérique" src="./img/pc.png">
+                <img class="logonoirs" alt="Aide aux devoirs et apprentissage" src="./img/livre.png">
+                <img class="logonoirs" alt="Aide aux démarches" src="./img/stylo.png">
+                <img class="solidarite" alt="Solidarité: aides distributions nourritures/masques..." src="./img/solidarité.png">
+            </article>
+
+
+            <hr class="taCenter"></hr>
+
+        </section>
+        <!-- FIN SECTION PRESENTATION-->
+
+        <!-- SECTION ACTIVITÉS-->
+        <section class="activites taCenter">
+
+            <h2 class="titreActivites taCenter"> ACTIVITÉS</h2>
+
+            <article class="textActivites flex jcc">
+                <img class="imgActivites" src="./img/learning02.png">
+                <ul>
+                    <li>Initiation cours informatique</li>
+                    <li>Utilisation clavier/souris</li>
+                </ul>
+
+            </article>
+
+            <article class="textActivites flex jcc">
+                <ul>
+                    <li>Démarches administrative</li>
+                    <li>Aide au numérique</li>
+                </ul>
+                <img class="imgActivites" src="./img/init01bis.jpg">
+            </article>
+
+            <article class="textActivites flex jcc">
+                <img class="imgActivites" src="./img/learning03.png">
+                <ul>
+                    <li>Accompagnement scolaire</li>
+
+                </ul>
+            </article>
+
+            <article class="textActivites flex jcc">
+                <ul>
+                    <li>Activités ludiques</li>
+                    <li>Jeux</li>
+                </ul>
+                <img class="imgActivites" src="./img/jeux.png">
+            </article>
+
+            <hr class="taCenter"></hr>
+
+        </section>
+        <!-- FIN SECTION ACTIVITÉS-->
+
+
+        <!-- SECTION PROGRAMMES-->
+        <section class="programmes taCenter">
+
+            <h2 class=titreProgrammes>PROGRAMMES</h2>
+
+            <p class="miniTitres"> HORAIRES D’OUVERTURE: </p>
+
+            <ul class="textMini textProgrammes">
+                <li>Du Mardi au Vendredi : 10h - 12h / 14h - 18h</li>
+                <li>Samedi : 10h - 12h</li>
+            </ul>
+
+            <article class=" emploiDuTemps grid">
+
+                <div class="joursSemaine grid">
+
+                    <p class="textJours">MARDI</p>
+
+                    <p class="textJours">MERCREDI</p>
+
+                    <p class="textJours">JEUDI</p>
+
+                    <p class="textJours">VENDREDI</p>
+
+                    <p class="textJours">SAMEDI</p>
+
+                </div>
+
+
+
+                <div class="horairesProgrammes textProgrammes taLeft grid">
+
+                    <ul class="textMini ">
+                        <!-- mardi-->
+                        <li>10h à 12h : Atelier d’initiation à l’informatique</li>
+                        <li> 14h à 16h : Atelier d’initiation avec l’assossiation LPBA</li>
+                        <li> 16h à 18h : Accès libre </li>
+                    </ul>
+
+
+                    <ul class="textMini">
+                        <!-- mercredi-->
+                        <li>10h à 12h : </li>
+                        <li> 14h à 16h :</li>
+                        <li> 16h30 à 18h : Atelier CLMO</li>
+                        <li> 17h à 18h30 : Aide aux devoirs</li>
+                    </ul>
+
+
+                    <ul class="textMini">
+                        <!-- jeudi-->
+                        <li>10h à 12h : Atelier insertion femme OMM</li>
+                        <li> 14h à 16h : E-démarches (sur rendez-vous)</li>
+                        <li> 16h à 18h : Accès libre</li>
+                    </ul>
+
+
+                    <ul class="textMini">
+                        <!-- vendredi-->
+                        <li>10h à 12h : E-démarches (sur rendez-vous)</li>
+                        <li> 14h à 16h : Atelier Papi-Mami</li>
+                        <li> 16h à 18h : Accès libre</li>
+                    </ul>
+
+
+                    <ul class="textMini">
+                        <!-- samedi-->
+                        <li>10h à 11h30 : Aide aux devoirs</li>
+                        <li>10h à 12h : Atelier d’initiation à l’informatique </li>
+                    </ul>
+
+                </div>
+
+
+            </article>
+
+            <!-- les activités des vacances scolaires-->
+            <ul class="textProgrammes">
+                <li class="miniTitres">Vacances scolaire : </li>
+                <li class="textMini">Atelier ludique avec les enfants participants à l’aide aux devoirs (jeux de société)</li>
+                <li class="textMini">Accueil du CLMO</li>
+            </ul>
+
+            <hr class="taCenter"></hr>
+
+
+        </section>
+        <!-- FIN SECTION PROGRAMMES-->
+
+    </main>
+
+    <!-- SECTION CONTACTS-->
+    <footer>
+        <h2 class="titreFooter taCenter">CONTACTS</h2>
+
+        <div class="flex wrap jcsa">
+
+            <article class="adresse taCenter ">
+                <img class="imgFooter " src="./img/ping.png ">
+                <p>11, allée Carpeaux 94500 Champigny-sur-Marne</p>
+            </article>
+
+
+            <article class="numtel taCenter ">
+                <img class="imgFooter " src="./img/tel.png ">
+                <p>01 48 80 11 32</p>
+            </article>
+
+            <article class="mail taCenter ">
+                <img class="imgFooter " src="./img/mail.png ">
+                <p>utsfar_champigny@hotmail.com</p>
+                <p>cyberblb@outlook.fr</p>
+            </article>
+
+        </div>
+        <!-- FIN SECTION CONTACTS-->
+
+        <div class="flex jcsa">
+            <p>Assossiation loi 1901</p>
+            <p><a class="hdp" href="#header">Revenir en haut de page</a></p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+    <script src="./js/utsf.js"></script>
+</body>
+
+</html>
+
+
+<!-- Pour modifier quelque chose dans le code directement, il vous suffit de 
+    cliquer dans l'élément et écrire/modifier ce qui est écrit entre les balises.
+
+    Par exemple, si on veux ajouter une activité dans la Section Programme, pour le jour de Samedi, 
+    on va dessus et on clique dans la balise, modifie les horaires etc
+    
+
+    exemple: (cet exemple est un copié-collé du programme de samedi juste en haut):
+    
+    
+                    <ul class="textMini">
+
+                             ---samedi---
+
+                        <li>10h à 11h30 : Aide aux devoirs</li>
+                        <li>10h à 12h : Atelier d’initiation à l’informatique </li>
+                    </ul>'
+
+    Ici il est possible de cliquer entre les balise <li> </li>, et de
+    modifier le texte qui y est présent. 
+
+    Pour ajouter un nouvel horaire, il suffit de faire pareil que vous le voyez:
+
+                    exemple: <li> de 13h30 à 16h : Jeux en plein air </li>
+
+    Il faut faire attention de vérifier que les balises <li> soient bien fermés avec </li>
+
+    !chaque balises ouvertes doit etre fermés par la suite!
+
+    Le mieux est de faire un copier-coller et de modifier le 
+    contenu entre les balises directement pour ne rien oublier.
+-->

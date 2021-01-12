@@ -1,0 +1,254 @@
+            /* Cette page est une page CSS, 
+elle permet de styliser les éléments qui
+    sont présent dans la page HTML: les couleurs, l'agencement, la position, la taille des 
+    images, textes, vidéos etc.. C'est ici que l'on paramètre tout ces éléments*/
+            /* Pour ajouter un paramètre à un élément HTML, il suffit de prendre le nom des 'class' présents
+dans les éléments HTML, ou directement l'élément HTML même, et ajouter ce que l'on veux dessus.
+(ex: ci dessous, on mets directement 'body' pour paramétrer tout ce que le body contient)*/
+            /* balise générales */
+            
+            body {
+                box-sizing: border-box;
+                height: 100%;
+                width: 100%;
+                margin: 0%;
+                padding: 0%;
+                background-color: #00DBDE;
+                background-image: linear-gradient(90deg, #6bbbbd 0%, #e194e2 100%);
+                /* background-image: url("../img/background.jpg"); */
+                background-size: 100%;
+                background-repeat: no-repeat;
+                font-family: 'Righteous', cursive;
+            }
+            
+            section {
+                margin-top: 3%;
+                margin-bottom: 3%;
+            }
+            
+            ul {
+                list-style-type: none;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            /*////////////////////////////////////*/
+            /* -------racourcis------ */
+            /*flex*/
+            
+            .flex {
+                display: flex;
+            }
+            
+            .wrap {
+                flex-wrap: wrap;
+            }
+            
+            .jcsb {
+                justify-content: space-between;
+            }
+            
+            .jcsa {
+                justify-content: space-around;
+            }
+            
+            .jcc {
+                justify-content: center;
+            }
+            
+            .grid {
+                display: grid;
+            }
+            
+            .taCenter {
+                text-align: center;
+            }
+            
+            .taLeft {
+                text-align: left;
+            }
+            /*-----------Header (haut de page) ---------*/
+            
+            h1 {
+                font-size: 90px;
+                margin: 0%;
+            }
+            
+            .utsfGrand {
+                margin: 1%;
+            }
+            
+            .lettre_u {
+                color: rgb(255, 255, 255);
+                text-shadow: 4px 4px 4px rgb(124, 183, 231);
+            }
+            
+            .lettre_ts {
+                color: rgb(255, 255, 255);
+                text-shadow: 2px 2px 2px rgb(6, 96, 170);
+            }
+            
+            .lettre_f {
+                color: rgb(255, 255, 255);
+                text-shadow: 2px 2px 2px rgb(2, 192, 49);
+            }
+            
+            .sousTitre {
+                margin: 0%;
+                color: rgb(0, 77, 150);
+                text-shadow: 1px 1px 2px #ffffff;
+                font-size: 17px;
+            }
+            
+            .logoVille {
+                width: 170px;
+                height: 70px;
+            }
+            
+            .sousMenu {
+                color: white;
+                margin-top: 3%;
+            }
+            
+            .imgAccueil {
+                width: 90%;
+                height: 100%;
+                border: solid 1px rgb(221, 221, 221);
+            }
+            /*------------------FIN Header ------------------*/
+            /* /////////////////////////////////////////////*/
+            /* ------------------BODY---------------------*/
+            
+            .punchline {
+                margin-top: 7%;
+                margin-bottom: 10%;
+                font-size: 35px;
+                color: white;
+                text-shadow: rgb(110, 110, 110) 1px 0 10px;
+            }
+            
+            hr {
+                height: 2px;
+                width: 70%;
+                background-color: rgb(255, 255, 255);
+            }
+            
+            .titrePresentation {
+                font-size: 36px;
+                color: rgb(228, 62, 62);
+            }
+            
+            .titreActivites {
+                font-size: 36px;
+                color: rgb(228, 62, 62);
+            }
+            
+            .titreProgrammes {
+                font-size: 36px;
+                color: rgb(228, 62, 62);
+            }
+            
+            .textPres {
+                font-size: 26px;
+                color: white;
+            }
+            
+            .textActivites {
+                font-size: 28px;
+                color: white;
+            }
+            
+            .textActivites ul li {
+                margin: 15px;
+                vertical-align: center;
+            }
+            
+            .textProgrammes {
+                color: white;
+            }
+            
+            .imgActivites {
+                height: 240px;
+                width: 350px;
+                border: solid 1px rgb(255, 82, 82);
+                border-radius: 2%;
+            }
+            
+            .miniTitres {
+                font-size: 22px;
+            }
+            
+            .textMini {
+                font-size: 19px;
+            }
+            
+            .textJours {
+                font-size: 33px;
+            }
+            /* logos */
+            
+            .logoMain {
+                border-radius: 65%;
+                height: 120px;
+                width: 150px;
+            }
+            
+            .logonoirs {
+                height: 70px;
+                width: 70px;
+            }
+            
+            .solidarite {
+                height: 100px;
+                width: 100px;
+            }
+            /*fin logos*/
+            /*------------*/
+            /*tableau emploi du temps*/
+            
+            .emploiDuTemps {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .joursSemaine {
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            }
+            
+            .horairesProgrammes {
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            }
+            /*-------------FIN BODY---------------*/
+            /*////////////////////////////////////*/
+            /*-------------FOOTER-----------------*/
+            
+            footer {
+                background-color: rgb(54, 156, 204);
+            }
+            
+            .titreFooter {
+                font-size: 36px;
+                color: rgb(228, 62, 62);
+            }
+            
+            .imgFooter {
+                width: 100px;
+                height: 75px;
+            }
+            
+            .hdp {
+                color: red;
+            }
+            /*-------------FIN FOOTER---------------*/
+            /*///////////////////////////////////////*/
+            /*----------------Hover------------------*/
+            /* Là tu mets tes :hovers, copie le truc que tu veux modifier,
+           colle le ici 
+           ! n'oublies pas de add :hover devant la classe, on la
+           connait celle là, c est normal si ca marche pas sans !
+
+*/
+            /*-------------FIN hover--------------*/
+            /*///////////////////////////////////////*/
+            /*----------------Medi@Queries------------------*/
+            /* Et là on mettras les mediaqueries !! */
